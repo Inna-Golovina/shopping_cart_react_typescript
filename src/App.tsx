@@ -34,7 +34,6 @@ const App = () => {
 
   const getTotalItems = (items: CartItemType[]) => items.reduce((acc: number, item) => acc + item.amount, 0);
 
-
   const handleAddToCart = (clickedItem: CartItemType) => {
     setCartItems(prev => {
       const isItemInCart = prev.find(item => item.id === clickedItem.id);
